@@ -4,7 +4,7 @@ Here is WendaoLee,a normal coder,who should be taken in liberal arts but ultimat
 
 ![glance](https://github-readme-stats-wendaolee.vercel.app/api?username=WendaoLee&theme=buefy&show_icons=true)
 
-
+> “都是自己的精神內耗罷了。”
 
 ***
 
