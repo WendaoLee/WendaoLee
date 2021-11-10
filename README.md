@@ -15,6 +15,6 @@ Here is WendaoLee,a normal coder,who should be taken in liberal arts but ultimat
 - :seedling: This is a simple record of my coding status during last seven days.
 
   ![status](https://github-readme-stats-wendaolee.vercel.app/api/wakatime?username=WendaoLee&layout=compact)
-  
-  
+
+You can click [here](404.html) if you want to view some of my articles and essay.
 
