@@ -1,10 +1,12 @@
 ### :ghost: Here,you will see a soul.​
 
-Here is WendaoLee,a normal coder,who should be taken in liberal arts but ultimately burning in the Geographic Information Science out of interest and ambition.
+WendaoLee,a nobody,who should be taken in liberal arts but ultimately burning in the Geographic Information Science out of interest and ambition.
 
 ![glance](https://github-readme-stats-wendaolee.vercel.app/api?username=WendaoLee&theme=buefy&show_icons=true)
 
 > “都是自己的精神內耗罷了。”
+>
+> "Why the cheshire cat smile?"
 
 ***
 
