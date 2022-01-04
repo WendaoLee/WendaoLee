@@ -18,5 +18,5 @@ WendaoLee,a nobody,who should be taken in liberal arts but ultimately burning in
 
   ![status](https://github-readme-stats-wendaolee.vercel.app/api/wakatime?username=WendaoLee&layout=compact)
 
-You can click [here](https://leewendao.otterstack.cn/404.html) if you want to view some of my articles and essay.
+
 
