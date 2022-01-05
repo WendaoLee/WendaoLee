@@ -2,15 +2,15 @@
 
 WendaoLee,a nobody,who should be taken in liberal arts but ultimately burning in the Geographic Information Science out of interest and ambition.
 
+During the seconds,there're many interest things for me to do.
+
 ![glance](https://github-readme-stats-wendaolee.vercel.app/api?username=WendaoLee&theme=buefy&show_icons=true)
 
-> “都是自己的精神內耗罷了。”
->
 > "Why the cheshire cat smile?"
 
 ***
 
-- :sunflower: This card shows the consistent of my Github published Repositories.
+- :sunflower: This card shows the consistent of my Github published repositories.
 
 ![Top Langs](https://github-readme-stats-wendaolee.vercel.app/api/top-langs/?username=WendaoLee&layout=compact)
 
