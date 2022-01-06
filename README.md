@@ -2,7 +2,7 @@
 
 WendaoLee,a nobody,who should be taken in liberal arts but ultimately burning in the Geographic Information Science out of interest and ambition.
 
-During the seconds,there're many interest things for me to do.
+During the seconds,there're many interesting things for us to do.
 
 ![glance](https://github-readme-stats-wendaolee.vercel.app/api?username=WendaoLee&theme=buefy&show_icons=true)
 
