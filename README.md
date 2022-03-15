@@ -24,5 +24,8 @@ During the seconds,there're many interesting things to be done.
 
   ![status](https://github-readme-stats-wendaolee.vercel.app/api/wakatime?username=WendaoLee&layout=compact)
 
+#### ・ Latest Plan(2022.3.15-2022.4.30)
 
+1. A-Soul-Jellyfish(Content Distribution,Database,Random matches)
+2. C++ Learning(Basic Language rules,something like backend)
 
