@@ -30,7 +30,7 @@ During the seconds,there're many interesting things to be done.
 
 #### ・ Latest Plan(2022.3.15-2022.4.30)
 
-1. ~~A-Soul-Jellyfish(Content Distribution,Database,Random matches)~~ Deprecated
+1. ~~A-Soul-Jellyfish(Content Distribution,Database,Random matches)~~ Discarded
 2. C++ Learning(Basic Language rules,something like backend)
 3. JueJin Hackathon 2022
 
