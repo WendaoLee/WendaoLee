@@ -16,7 +16,7 @@ During the seconds,there're many interesting things to be done.
 >
 > C++ is the white moonlight.
 >
-> Let us see who is a good programmer.
+> 我为我的无能痛苦不已。
 
 ***
 
