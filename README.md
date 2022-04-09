@@ -17,6 +17,8 @@ During the seconds,there're many interesting things to be done.
 > C++ is the white moonlight.
 >
 > 我为我的无能痛苦不已。
+>
+> 写插件用Typescript真的不是在自找不快吗？
 
 ***
 
