@@ -16,9 +16,6 @@ During the seconds,there're many interesting things to be done.
 >
 > C++ is the white moonlight.
 >
-> 我为我的无能痛苦不已。
->
-> 现代的Javascript确实灵巧而强健。
 
 ***
 
@@ -30,9 +27,10 @@ During the seconds,there're many interesting things to be done.
 
   ![status](https://github-readme-stats-wendaolee.vercel.app/api/wakatime?username=WendaoLee&layout=compact&theme=dark)
 
-#### ・ Latest Plan(2022.3.15-2022.4.30)
+#### ・ Latest Plan(2022.05.05——2022.06.30)
 
-1. ~~A-Soul-Jellyfish(Content Distribution,Database,Random matches)~~ Discarded
-2. C++ Learning(Basic Language rules,something like backend)
-3. JueJin Hackathon 2022
+1. Living regularly
+2. Mathematical Modeling
+3. Learning C++ with reviewing data structure
+4. Haskell and FP
 
