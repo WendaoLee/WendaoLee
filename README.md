@@ -16,6 +16,7 @@ During the seconds,there're many interesting things to be done.
 >
 > C++ is the white moonlight.
 >
+> Learning Haskell,knowing the world.
 
 ***
 
