@@ -1,22 +1,10 @@
 ### :ghost: Here,you will see a soul.​
 
-WendaoLee,a nobody,who should be taken in liberal arts but ultimately burning in the Geographic Information Science out of interest and ambition.
+Hi,here is Wendao Lee,a nobody. I'm majoring in  **Geographic Information Science** 🎉,but also costs much on **Computer Science**. 
 
-During the seconds,there're many interesting things to be done.
+I always do some useless work  just out of interest,for which you can view through my repositories. Do hope the things I have done could help someone in the future days —— Err......absurd wishes.
 
 ![glance](https://github-readme-stats-wendaolee.vercel.app/api?username=WendaoLee&theme=tokyonight&show_icons=true)
-
-> "Why the cheshire cat smile?"
->
-> xxxHolic,melancholy
->
-> “我如何可悲”
->
-> Ranni,take me out!!!😭😭😭😭😭😭
->
-> C++ is the white moonlight.
->
-> Learning Haskell,knowing the world.
 
 ***
 
