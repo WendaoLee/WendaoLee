@@ -4,8 +4,6 @@ Hi,here is Wendao Lee,a nobody. I'm majoring in  **Geographic Information Scienc
 
 I always do some useless work  just out of interest,for which you can view through my repositories. Do hope the things I have done could help someone in the future days —— Err......absurd wishes.
 
-> A-Soul，我心中的痛。就让我已经死了的心随她们埋葬在那个盛夏吧。
-
 ![glance](https://github-readme-stats-wendaolee.vercel.app/api?username=WendaoLee&theme=tokyonight&show_icons=true)
 
 ***
@@ -21,7 +19,7 @@ I always do some useless work  just out of interest,for which you can view throu
 #### ・ Latest Plan(2022.05.05——2022.06.30)
 
 1. Living regularly
-2. Mathematical Modeling
+2. ~~Mathematical Modeling~~ **Done**
 3. Learning C++ with reviewing data structure
 4. Haskell and FP
 
