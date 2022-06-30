@@ -16,10 +16,9 @@ I always do some useless work  just out of interest,for which you can view throu
 
   ![status](https://github-readme-stats-wendaolee.vercel.app/api/wakatime?username=WendaoLee&layout=compact&theme=dark)
 
-#### ・ Latest Plan(2022.05.05——2022.06.30)
+#### ・ Latest Plan(2022.07.01——2022.07.31)
 
-1. Living regularly
-2. ~~Mathematical Modeling~~ **Done**
-3. Learning C++ with reviewing data structure
-4. Haskell and FP
+1. Haskell and FP
+2. SuperMap develop
+3. Mathematical Analysis
 
