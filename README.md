@@ -6,6 +6,10 @@ I always do some useless work  just out of interest,for which you can view throu
 
 ![glance](https://github-readme-stats-wendaolee.vercel.app/api?username=WendaoLee&theme=tokyonight&show_icons=true)
 
+> My tags:
+>
+> `"White Puffer"` `Stupid` `Undisciplined` `Fantast`
+
 ***
 
 - :sunflower: This card shows the consistent of my Github published repositories.
