@@ -20,9 +20,10 @@ I always do some useless work  just out of interest,for which you can view throu
 
   ![status](https://github-readme-stats-wendaolee.vercel.app/api/wakatime?username=WendaoLee&layout=compact&theme=dark)
 
-#### ・ Latest Plan(2022.07.01——2022.07.31)
+#### ・Future Orientation
 
-1. Haskell and FP
-2. SuperMap develop
-3. Mathematical Analysis
+- Mathmatics
+- Computer Science
+- Writing && Reading
+- Learning more languages(English,Japanese)
 
