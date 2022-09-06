@@ -22,6 +22,11 @@ I always do some useless work  just out of interest,for which you can view throu
 
   ![status](https://github-readme-stats-wendaolee.vercel.app/api/wakatime?username=WendaoLee&layout=compact&theme=dark)
 
+#### · Recently I Learning For
+
+- Linear Algebra (Sadly I forgot it since I last learned it. So now I'm reviewing of it)
+- Haskell (I want to keep holding with it)
+
 #### ・Future Orientation
 
 - Mathmatics
