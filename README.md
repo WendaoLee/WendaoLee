@@ -21,6 +21,12 @@ I always do some useless work  just out of interest,for which you can view throu
 - :seedling: This is a simple record of my coding status during last seven days.
 
   ![status](https://github-readme-stats-wendaolee.vercel.app/api/wakatime?username=WendaoLee&layout=compact&theme=dark)
+  
+#### · My Weekly Goal(2022.11.10-2022.11.17)
+
+- [ ] Translate Python/Library/sqlite3
+- [ ] Category Theory Chap1 Finish
+- [ ] TencentMap.js
 
 #### · Recently I Learning For
 
