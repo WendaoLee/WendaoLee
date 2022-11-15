@@ -25,7 +25,7 @@ I always do some useless work  just out of interest,for which you can view throu
 #### · My Weekly Goal(2022.11.10-2022.11.17)
 
 - [ ] Translate Python/Library/sqlite3
-- [ ] Category Theory Chap1 Finish
+- [x] Category Theory Chap1 Finish
 - [ ] TencentMap.js
 
 #### · Recently I Learning For
