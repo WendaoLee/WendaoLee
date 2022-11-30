@@ -22,7 +22,7 @@ I always do some useless work  just out of interest,for which you can view throu
 
   ![status](https://github-readme-stats-wendaolee.vercel.app/api/wakatime?username=WendaoLee&layout=compact&theme=dark)
   
-#### · My Weekly Goal(2022.11.10-2022.11.17-11.24)
+#### · My Weekly Goal(2022.11.10-2022.11.17-11.24-12.8)
 
 - [ ] Translate Python/Library/sqlite3
 - [x] Category Theory Chap1 Finish
