@@ -26,7 +26,7 @@ I always do some useless work  just out of interest,for which you can view throu
 
 - [ ] Translate Python/Library/sqlite3
 - [x] Category Theory Chap1 Finish
-- [ ] TencentMap.js
+- [-] TencentMap.js
 - [ ] Category Theory Chap2
 
 #### · Recently I Learning For
