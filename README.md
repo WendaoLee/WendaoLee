@@ -31,7 +31,7 @@ I always do some useless work  just out of interest,for which you can view throu
 
 #### · Today Goal(2022.12.23)
 
-1. Category Theory Chap2
+1. Category Theory Chap2 two sections
 2. Learning Haskell Chap2
 3. Sqlite3 translation
 4. cuteTencentMap
