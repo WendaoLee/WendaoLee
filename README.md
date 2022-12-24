@@ -26,15 +26,15 @@ I always do some useless work  just out of interest,for which you can view throu
 
 - [ ] Translate Python/Library/sqlite3
 - [x] Category Theory Chap1 Finish
-- [ ] TencentMap.js
+- [ ] cuteTencentMap.js
 - [ ] Category Theory Chap2
 
 #### · Today Goal(2022.12.23)
 
-1. Category Theory Preliminaries Notes Review
-2. Learning Haskell Chap1
+1. Category Theory Chap2
+2. Learning Haskell Chap2
 3. Sqlite3 translation
-4. ArcGIS Homework
+4. cuteTencentMap
 
 #### · Recently I Learning For
 
