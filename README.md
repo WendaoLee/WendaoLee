@@ -22,19 +22,19 @@ I always do some useless work  just out of interest,for which you can view throu
 
   ![status](https://github-readme-stats-wendaolee.vercel.app/api/wakatime?username=WendaoLee&layout=compact&theme=dark)
   
-#### · My Weekly Goal()
+#### · My Weekly Goal(12.26-12.31)
 
 - [ ] Translate Python/Library/sqlite3
-- [x] Category Theory Chap1 Finish
+- [ ] Category Theory Chap2 Finish
 - [ ] cuteTencentMap.js
 - [ ] Category Theory Chap2
 
-#### · Today Goal(2022.12.23)
+#### · Today Goal(2022.12.25)
 
-1. Category Theory Chap2 two sections
+1. Category Theory Chap2 section 2
 2. Learning Haskell Chap2
 3. Sqlite3 translation
-4. cuteTencentMap
+4. GIS homework begin
 
 #### · Recently I Learning For
 
