@@ -27,11 +27,10 @@ I always do some useless work  just out of interest,for which you can view throu
 - [ ] Translate Python/Library/sqlite3
 - [ ] Category Theory Chap2 Finish
 - [ ] cuteTencentMap.js
-- [ ] Category Theory Chap2
 
-#### · Today Goal(2022.12.25)
+#### · Today Goal(2022.12.26)
 
-1. Category Theory Chap2 section 2
+1. Category Theory Chap2 section 3
 2. Learning Haskell Chap2
 3. Sqlite3 translation
 4. GIS homework begin
