@@ -12,8 +12,6 @@ I always do some useless work  just out of interest,for which you can view throu
 >
 > `"White Puffer"` `Stupid` `Undisciplined` `Fantast`
 
-Got Covid19 recentlt,so tough.
-
 ***
 
 - :sunflower: This card shows the consistent of my Github published repositories.
@@ -30,12 +28,10 @@ Got Covid19 recentlt,so tough.
 - [ ] Category Theory Chap2 Finish
 - [ ] cuteTencentMap.js
 
-#### · Today Goal(2022.12.26)
+#### · Today Goal(2022.12.31)
 
 1. Category Theory Chap2 section 3
-2. Learning Haskell Chap2
 3. Sqlite3 translation
-4. GIS homework begin
 
 #### · Recently I Learning For
 
