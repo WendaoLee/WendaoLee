@@ -22,16 +22,11 @@ I always do some useless work  just out of interest,for which you can view throu
 
   ![status](https://github-readme-stats-wendaolee.vercel.app/api/wakatime?username=WendaoLee&layout=compact&theme=dark)
   
-#### · My Weekly Goal(12.26-12.31)
+#### · My Weekly Goal(1.6-1.13)
 
-- [ ] Translate Python/Library/sqlite3
 - [ ] Category Theory Chap2 Finish
-- [ ] cuteTencentMap.js
-
-#### · Today Goal(2022.12.31)
-
-1. Category Theory Chap2 section 3
-3. Sqlite3 translation
+- [ ] GIS homework （code、ppt、doc）
+- [ ] Multivariable Statistical Analyze Homework 1,2,3
 
 #### · Recently I Learning For
 
