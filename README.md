@@ -22,11 +22,6 @@ I always do some useless work  just out of interest,for which you can view throu
 
   ![status](https://github-readme-stats-wendaolee.vercel.app/api/wakatime?username=WendaoLee&layout=compact&theme=dark)
   
-#### · My Weekly Goal(1.6-1.13)
-
-- [ ] Category Theory Chap2 Finish
-- [ ] GIS homework （code、ppt、doc）
-- [ ] Multivariable Statistical Analyze Homework 1,2,3
 
 #### · Recently I Learning For
 
