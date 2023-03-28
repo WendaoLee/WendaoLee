@@ -1,5 +1,9 @@
 ## :ghost: Here,you will see a soul.​
 
+> 临时由GithubPages托管的个人博客站点：[leewendao.otterstack.cn/index.html](https://leewendao.otterstack.cn/index.html)
+>
+> The temporary personal blog powered by GithubPages:[leewendao.otterstack.cn/index.html](https://leewendao.otterstack.cn/index.html)
+
 Hi,here is Wendao Lee,a nobody. I'm majoring in  **Geographic Information Science** 🎉,but also costs much on **Computer Science**. 
 
 I always do some useless work  just out of interest,for which you can view through my repositories. Do hope the things I have done could help someone in the future days —— Err......absurd wishes.
