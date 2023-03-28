@@ -1,0 +1,751 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>Hectopascal</title><link href='https://fonts.loli.net/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none 0s ease 0s; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+  .typora-export h1::after, .typora-export h2::after, .typora-export h3::after, .typora-export h4::after, .typora-export h5::after, .typora-export h6::after { content: ""; display: block; height: 100px; margin-bottom: -100px; }
+}
+
+
+/* meyer reset -- http://meyerweb.com/eric/tools/css/reset/ , v2.0 | 20110126 | License: none (public domain) */
+
+@include-when-export url(https://fonts.loli.net/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+
+/* =========== */
+
+/* pt-serif-regular - latin */
+/* pt-serif-italic - latin */
+/* pt-serif-700 - latin */
+/* pt-serif-700italic - latin */
+:root {
+	--active-file-bg-color: #dadada;
+	--active-file-bg-color: rgba(32, 43, 51, 0.63);
+	--active-file-text-color: white;
+	--bg-color: #f3f2ee;
+	--text-color: #1f0909;
+	--control-text-color: #444;
+	--rawblock-edit-panel-bd: #e5e5e5;
+
+	--select-text-bg-color: rgba(32, 43, 51, 0.63);
+  --select-text-font-color: white;
+}
+
+pre {
+	--select-text-bg-color: #36284e;
+	--select-text-font-color: #fff;
+}
+
+html {
+	font-size: 16px;
+}
+
+html, body {
+	background-color: #f3f2ee;
+	font-family: "PT Serif", 'Times New Roman', Times, serif;
+	color: #1f0909;
+	line-height: 1.5em;
+}
+
+/*#write {
+	overflow-x: auto;
+    max-width: initial;
+	padding-left: calc(50% - 17em);
+    padding-right: calc(50% - 17em);
+}
+
+@media (max-width: 36em) {
+ 	#write {
+ 		padding-left: 1em;
+    	padding-right: 1em;
+ 	}
+}*/
+
+#write {
+	max-width: 40em;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+			max-width: 914px;
+	}
+}
+
+ol li {
+	list-style-type: decimal;
+	list-style-position: outside;
+}
+ul li {
+	list-style-type: disc;
+	list-style-position: outside;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* styles */
+
+/* ====== */
+
+/* headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;
+}
+h1 {
+	font-size: 1.875em;
+	/*30 / 16*/
+	line-height: 1.6em;
+	/* 48 / 30*/
+	margin-top: 2em;
+}
+h2,
+h3 {
+	font-size: 1.3125em;
+	/*21 / 16*/
+	line-height: 1.15;
+	/*24 / 21*/
+	margin-top: 2.285714em;
+	/*48 / 21*/
+	margin-bottom: 1.15em;
+	/*24 / 21*/
+}
+h3 {
+	font-weight: normal;
+}
+h4 {
+	font-size: 1.125em;
+	/*18 / 16*/
+	margin-top: 2.67em;
+	/*48 / 18*/
+}
+h5,
+h6 {
+	font-size: 1em;
+	/*16*/
+}
+h1 {
+	border-bottom: 1px solid;
+	margin-bottom: 1.875em;
+	padding-bottom: 0.8125em;
+}
+/* links */
+
+a {
+	text-decoration: none;
+	color: #065588;
+}
+a:hover,
+a:active {
+	text-decoration: underline;
+}
+/* block spacing */
+
+p,
+blockquote,
+.md-fences {
+	margin-bottom: 1.5em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 1.5em;
+}
+/* blockquote */
+
+blockquote {
+	font-style: italic;
+	border-left: 5px solid;
+	margin-left: 2em;
+	padding-left: 1em;
+}
+/* lists */
+
+ul,
+ol {
+	margin: 0 0 1.5em 1.5em;
+}
+/* tables */
+.md-meta,.md-before, .md-after {
+	color:#999;
+}
+
+table {
+	margin-bottom: 1.5em;
+	/*24 / 16*/
+	font-size: 1em;
+	/* width: 100%; */
+}
+thead th,
+tfoot th {
+	padding: .25em .25em .25em .4em;
+	text-transform: uppercase;
+}
+th {
+	text-align: left;
+}
+td {
+	vertical-align: top;
+	padding: .25em .25em .25em .4em;
+}
+
+code,
+.md-fences {
+	background-color: #dadada;
+}
+
+code {
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.md-fences {
+	margin-left: 2em;
+	margin-bottom: 3em;
+	padding-left: 1ch;
+	padding-right: 1ch;
+}
+
+pre,
+code,
+tt {
+	font-size: .875em;
+	line-height: 1.714285em;
+}
+/* some fixes */
+
+h1 {
+	line-height: 1.3em;
+	font-weight: normal;
+	margin-bottom: 0.5em;
+}
+
+p + ul,
+p + ol{
+	margin-top: .5em;
+}
+
+h3 + ul,
+h4 + ul,
+h5 + ul,
+h6 + ul,
+h3 + ol,
+h4 + ol,
+h5 + ol,
+h6 + ol {
+	margin-top: .5em;
+}
+
+li > ul,
+li > ol {
+	margin-top: inherit;
+	margin-bottom: 0;
+}
+
+li ol>li {
+	list-style-type: lower-alpha;
+}
+
+li li ol>li{
+	list-style-type: lower-roman;
+}
+
+h2,
+h3 {
+	margin-bottom: .75em;
+}
+hr {
+	border-top: none;
+	border-right: none;
+	border-bottom: 1px solid;
+	border-left: none;
+}
+h1 {
+	border-color: #c5c5c5;
+}
+blockquote {
+	border-color: #bababa;
+	color: #656565;
+}
+
+blockquote ul,
+blockquote ol {
+	margin-left:0;
+}
+
+.ty-table-edit {
+	background-color: transparent;
+}
+thead {
+	background-color: #dadada;
+}
+tr:nth-child(even) {
+	background: #e8e7e7;
+}
+hr {
+	border-color: #c5c5c5;
+}
+.task-list{
+	padding-left: 1rem;
+}
+
+.md-task-list-item {
+	padding-left: 1.5rem;
+	list-style-type: none;
+}
+
+.md-task-list-item > input:before {
+	content: '\221A';
+	display: inline-block;
+	width: 1.25rem;
+  	height: 1.6rem;
+	vertical-align: middle;
+	text-align: center;
+	color: #ddd;
+	background-color: #F3F2EE;
+}
+
+.md-task-list-item > input:checked:before,
+.md-task-list-item > input[checked]:before{
+	color: inherit;
+}
+
+#write pre.md-meta-block {
+	min-height: 1.875rem;
+	color: #555;
+	border: 0px;
+	background: transparent;
+	margin-top: -4px;
+	margin-left: 1em;
+	margin-top: 1em;
+}
+
+.md-image>.md-meta {
+	color: #9B5146;
+}
+
+.md-image>.md-meta{
+	font-family: Menlo, 'Ubuntu Mono', Consolas, 'Courier New', 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', serif;
+}
+
+
+#write>h3.md-focus:before{
+	left: -1.5rem;
+	color:#999;
+	border-color:#999;
+}
+#write>h4.md-focus:before{
+	left: -1.5rem;
+	top: .25rem;
+	color:#999;
+	border-color:#999;
+}
+#write>h5.md-focus:before{
+	left: -1.5rem;
+	top: .0.3125rem;
+	color:#999;
+	border-color:#999;
+}
+#write>h6.md-focus:before{
+	left: -1.5rem;
+	top: 0.3125rem;
+	color:#999;
+	border-color:#999;
+}
+
+.md-toc:focus .md-toc-content{
+	margin-top: 19px;
+}
+
+.md-toc-content:empty:before{
+	color: #065588;
+}
+.md-toc-item {
+	color: #065588;
+}
+#write div.md-toc-tooltip {
+	background-color: #f3f2ee;
+}
+
+#typora-sidebar {
+	background-color: #f3f2ee;
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.375);
+  	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.375);
+}
+
+.pin-outline #typora-sidebar {
+	background: inherit;
+	box-shadow: none;
+	border-right: 1px dashed;
+}
+
+.pin-outline #typora-sidebar:hover .outline-title-wrapper {
+	border-left:1px dashed;
+}
+
+.outline-item:hover {
+  background-color: #dadada;
+  border-left: 28px solid #dadada;
+  border-right: 18px solid #dadada;
+}
+
+.typora-node .outline-item:hover {
+  	border-right: 28px solid #dadada;
+}
+
+.outline-expander:before {
+  content: "\f0da";
+  font-family: FontAwesome;
+  font-size:14px;
+  top: 1px;
+}
+
+.outline-expander:hover:before,
+.outline-item-open>.outline-item>.outline-expander:before {
+  content: "\f0d7";
+}
+
+.modal-content {
+	background-color: #f3f2ee;
+}
+
+.auto-suggest-container ul li {
+	list-style-type: none;
+}
+
+/** UI for electron */
+
+.megamenu-menu,
+#top-titlebar, #top-titlebar *,
+.megamenu-content {
+	background: #f3f2ee;
+	color: #1f0909;
+}
+
+.megamenu-menu-header {
+	border-bottom: 1px dashed #202B33;
+}
+
+.megamenu-menu {
+	box-shadow: none;
+	border-right: 1px dashed;
+}
+
+header, .context-menu, .megamenu-content, footer {
+	font-family: "PT Serif", 'Times New Roman', Times, serif;
+    color: #1f0909;
+}
+
+#megamenu-back-btn {
+	color: #1f0909;
+	border-color: #1f0909;
+}
+
+.megamenu-menu-header #megamenu-menu-header-title:before {
+	color: #1f0909;
+}
+
+.megamenu-menu-list li a:hover, .megamenu-menu-list li a.active {
+	color: inherit;
+	background-color: #e8e7df;
+}
+
+.long-btn:hover {
+	background-color: #e8e7df;
+}
+
+#recent-file-panel tbody tr:nth-child(2n-1) {
+    background-color: transparent !important;
+}
+
+.megamenu-menu-panel tbody tr:hover td:nth-child(2) {
+    color: inherit;
+}
+
+.megamenu-menu-panel .btn {
+	background-color: #D2D1D1;
+}
+
+.btn-default {
+	background-color: transparent;
+}
+
+.typora-sourceview-on #toggle-sourceview-btn,
+.ty-show-word-count #footer-word-count {
+	background: #c7c5c5;
+}
+
+#typora-quick-open {
+    background-color: inherit;
+}
+
+.md-diagram-panel {
+	margin-top: 8px;
+}
+
+.file-list-item-file-name {
+	font-weight: initial;
+}
+
+.file-list-item-summary {
+	opacity: 1;
+}
+
+.file-list-item {
+	color: #777;
+}
+
+.file-list-item.active {
+	background-color: inherit;
+	color: black;
+}
+
+.ty-side-sort-btn.active {
+	background-color: inherit;
+}
+
+.file-list-item.active .file-list-item-file-name  {
+	font-weight: bold;
+}
+
+.file-list-item{
+    opacity:1 !important;
+}
+
+.file-library-node.active>.file-node-background{
+	background-color: rgba(32, 43, 51, 0.63);
+	background-color: var(--active-file-bg-color);
+}
+
+.file-tree-node.active>.file-node-content{
+	color: white;
+	color: var(--active-file-text-color);
+}
+
+.md-task-list-item>input {
+	margin-left: -1.7em;
+	margin-top: calc(1rem - 12px);
+}
+
+input {
+	border: 1px solid #aaa;
+}
+
+.megamenu-menu-header #megamenu-menu-header-title,
+.megamenu-menu-header:hover, 
+.megamenu-menu-header:focus {
+	color: inherit;
+}
+
+.dropdown-menu .divider {
+	border-color: #e5e5e5;
+}
+
+/* https://github.com/typora/typora-issues/issues/2046 */
+.os-windows-7 strong,
+.os-windows-7 strong  {
+	font-weight: 760;
+}
+
+.ty-preferences .btn-default {
+	background: transparent;
+}
+
+.ty-preferences .window-header {
+	border-bottom: 1px dashed #202B33;
+	box-shadow: none;
+}
+
+#sidebar-loading-template, #sidebar-loading-template.file-list-item {
+	color: #777;
+}
+
+.searchpanel-search-option-btn.active {
+	background: #777;
+	color: white;
+}
+
+
+</style>
+</head>
+<body class='typora-export os-windows'>
+<div id='write'  class=''><p>&nbsp;</p><h1><a name="hectopascal" class="md-header-anchor"></a><span>Hectopascal</span></h1><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n190"><a class="md-toc-inner" href="#hectopascal">Hectopascal</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n186"><a class="md-toc-inner" href="#chap-1-渐黯-dusking">Chap 1 渐黯 Dusking </a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n133"><a class="md-toc-inner" href="#chap2-下沉-sinking">Chap2 下沉 Sinking</a></span></p></div><h2><a name="chap-1-渐黯-dusking" class="md-header-anchor"></a><span>Chap 1 渐黯 Dusking </span></h2><p><span>【1】</span></p><p><span>　　我可以闻到浓郁的玉兰花香。</span></p><p><span>　　我正站在一棵盛放着的白玉兰树下，轻轻倚靠着树干。玉兰这种花的香气本身就很浓郁，以至于嗅觉不是很灵敏的我都能清晰地感受到它的香味。天生嗅觉不灵这件事就其本身而言并没有什么大不了的，只是每每在人们为一件事物——例如说香水，例如说某样以香味著名的菜肴——陶醉不已的时候，什么都感受不到的我只感觉自己在人群之中是那么的异类。想象吧，当人们抛出一个你没有任何认知的话头兴致勃勃地高谈阔论，而你对此一无所知，除了尴尬地应和几声与沉默外，几乎没有什么可做的。勉强挤出一个笑容假装自己与周围人一样，却发现这种伪装只会让人痛苦不已。</span></p><p><span>　　玉兰花的香气很独特，如果是嗅觉灵敏的人，靠近了闻可能会觉得浓郁得受不了。但像我这样先天嗅觉迟钝的人，却不会感觉很难受，相反地，这种浓郁到能让我感受到“香味”的存在莫名让我有了一种“啊原来我是活着的”的感觉。</span></p><p><span>　　我细细地嗅着花香，贪婪地眯上了眼。</span></p><p><span>　　此时正是初春，万物正在从一个季度的长眠中逐渐苏醒。在我居住成长的这座小镇上，那条名为“棠溪”的小溪的表层往往会在秋末至冬初这段时间内开始冻结，往往到小寒日的时候冰层就会结得很厚。而到了现在，冰层已经基本上融化了，春日的暖阳下溪面泛着粼粼波光，偶尔能看到一两小块破碎的浮冰。</span></p><p><span>　　在棠溪的两旁栽种着一排杨柳，在此时黝黑的老枝会重新吐出新绿的嫩芽。</span></p><p><span>　　燕子在这时候也会飞回镇子上那些早已无人居住的老屋里。“叽叽”的叫声回荡在老屋外的小巷中。</span></p><p><span>　　在花坛、草坪会重新出现零星的不知名的小花。</span></p><p><span>　　再过不久便会到桃花盛开的时候。在我们这座山中小镇的镇外，满山都种着桃树。到了那个时间点满山遍野的桃花都会盛放。桃花的香气并不浓郁，哪怕是满山的桃花。从小到大我都闻不出桃花的味道来——直到去年，我才真正地嗅到了……</span></p><p><span>　　“嘀嗒。”</span></p><p><span>　　手表发出的声音打断了我的思绪。我看向表面，时针与分针正好重合在“12”这个数字上。</span></p><p><span>　　正午十二点。</span></p><p><span>　　我与林蒙约好的时间。</span></p><p><span>　　我把倚靠在白玉兰树上的背挪开，重新站好。顺便理了理衣裳，好让自己显得庄重一点儿。随后将目光投向教学楼的出口。</span></p><p><span>  </span></p><p><span>　　我叫叶舟，女，是本地重点高中云琎中学的高二文科生。林蒙是我在班里交好的男性朋友之一，长相白净，戴着一副圆黑框眼镜，非常斯文的样子，平常也沉默寡言。今天早自修的时候，坐在前面的他突然转过头来，悄声问我中午十二点有没有空，有的话能否在教学楼门口的对面的那棵白玉兰树下见面。他说他有话想跟我讲。</span></p><p><span>　　我说好。</span></p><p><span>　　但是说完的下一秒后我又后悔了。</span></p><p><span>　　因为我的好奇心被勾起来了。而且，在他转回头的时候，我似乎瞥到了他的脸上突然带上了红晕。</span></p><p><span>　　这是......害羞吗？</span></p><p><span>　　但我俩平日里就是普通的好友交情啊？我也从未见过他在我面前有这副作态。该不会.......</span></p><p><span>　　我开始反思自己是不是过于迟钝了，就跟我的嗅觉一样。可是即使我反复翻找自己的记忆，依然看不出任何端倪。</span></p><p><span>　　希望事情不会是我想的那样吧，不然我不知道到时候该如何处理我俩的关系。尽管刘孛和我只是普通同学之上的“普通朋友”的关系——可以在闲暇的时候一起吐吐生活的槽，但是不会言深的关系——但我打心底里是珍视这样保持微妙距离感的普通关系的。书上是怎么说的来着？“人是社会关系的集合”，谁也不能例外。我默默在心里叹了口气。</span></p><p><span>　　喜欢......吗？</span></p><p><span>　　眼前突然闪过某个人的面庞，鼻梁似乎还绕着她发梢的味道——那是第一次，恍如惊鸿的第一次，让我闻到时心跳忽然间怦怦加速的“气味”，与一种伴随着微弱电流滑过全身的奇妙感觉。</span></p><p><span>　　那算是喜欢吗？我不知道。世界上总是有无数难以得到确切答案的问题，尤其是关于人与人关系的那一部分。亲情、友情、师生情、长幼情、邻里情......这些我都不太了解。我无法像是做历史卷子那样，对于某个事件下一个包含确切时空的定义。我对于这些事物只有模糊的印象，而无法用言语去将它们确切描述。如果把这些“感情”定义为是人由于荷尔蒙与多巴胺分泌而引发的行为倾向，这样看似理性的定义也无法使我认可——其中我最迷茫的便是关于“爱情”这种感情。懵懂的青春小说，经典的世界名著，关于爱情的文字我看了一遍又一遍。可是至今我都不明白什么是喜欢什么是爱情，就像我不清楚人与人之间的感情、我在面对白遇桃时所怀的那种心情到底是什么东西那样，迷迷糊糊，茫茫然，就像是一个人看着夕阳西沉，看着视野中的景物逐渐模糊，四下渐黯，说不清心里面是什么滋味。</span></p><p><span>　　说实话的话，或许是出于对未知的恐惧吧，我害怕着任何对现有的稳定关系的改变。我总是习惯于和周围的大多数人保持着一种友善却有不小距离感的关系，不与人交恶，但也不会太亲密——至少在我自己看来是这样的——哪怕是我特别有好感的人，例如白遇桃，我也依然死死地守着那条距离的线，偶尔可能会因为那萌生的冲动稍微向前挪了那几步，但又会很快躲回安全线之内。我习惯于隔着一段距离悄悄打量她，却从不奢望能够凑近她的面庞。</span></p><p><span>　　这样就够了——我时常对自己这么说——和所有人保持着这样的关系，从小到大，无论是白遇桃，还是现在有事找我的林蒙。这样的关系就像是星系一般，所有天体都在微妙的距离中维持着引力的平衡，按照着永恒不变的规律日复一日运动着，而不用担心因靠近而发生的碰撞与崩塌——和谐的世界，协调的宇宙。</span></p><p><span>　　所以我也不希望林蒙这回找我的缘由不是我所设想的最坏的情况——我不懂什么是喜欢，就算知道，也不愿因此而改变与他人的关系。我对此非常坚定。</span></p><p><span>　　......</span></p><p><span>　　应该只会在白遇桃身上会稍微有些迟疑......吧？</span></p><p><span>  </span></p><p><span>　　正在我无边遐想时，林蒙的身影出现在了教学楼的门口。看到我，他很快地飞奔过来朝我打招呼：</span></p><p><span>　　“嗨——不好意思，刚刚整理东西多花了一点时间。”</span></p><p><span>　　“没事。其实我也没等多久。”</span></p><p><span>　　这只是托词。事实上在下课后我便来到这里赴约了，大概等了十来分钟左右。我走的时候林蒙似乎正在和他的同桌兰杜康——同样是和我交好的男同学——紧张地说着什么，所以并没有和他一起过来。我好奇地问他：“所以你找我是什么事？”</span></p><p><span>　　闻言，林蒙又如早上那般涨红了险。林蒙是白净斯文的那种类型，因而脸红得特别明显。只见他挠了挠头，吞吞吐吐道：“有一件事，我很久以前就想跟你说了.......”似乎是出于害羞，他低下了头，不敢正视我。</span></p><p><span>　　我的心猛地一紧。</span></p><p><span>　　“我......喜欢兰杜康。”</span></p><p><span>　　“抱——等等，你说什么？”我刚要下意识地说出拒绝的腹稿，但立刻反应了过来，“你，你喜欢兰杜康？”</span></p><p><span>　　兰杜康是男的，林蒙也是男的。似乎有什么奇怪的事情在我面前发生了。不过这些都不是什么大事，我对这些都持着一种漠不关心的态度。唯一令我想吐槽的是——</span></p><p><span>　　——你喜欢别的人为什么要来找我说啊！</span></p><p><span>【2】</span></p><p><span>　　“嗯，我喜欢他。只是我不知道他喜不喜欢我。”面对我的疑问，面前的同班少年不好意思地点头承认，而后认真地看向了我，“因为叶舟你是我们两个人共同的朋友，而且我一直都觉得你很靠谱，所以想来问你的意见。就是.......”他顿了一下，似是组织措辞：“你觉得，我和他，有可能吗？”</span></p><p><span>　　林蒙的眼神是那么的真诚，以至于我一时间有些慌乱。这算什么？哪怕我无时不刻地和别人保持着距离，在一些朋友的眼中我依然是值得倾吐隐私的挚友吗？况且，我在感情上也是一张白纸啊。我微微张嘴想要说出什么，但还是有些头疼地扶额：“等等啊，你突然跟我说这个我有点反应不过来.......让我捋一下。”</span></p><p><span>　　我开始疯狂回忆有关林蒙和兰杜康的记忆。兰杜康的长相与林蒙相反，属于那种经常锻炼的小麦色少年，略微粗犷。不过和我印象中的这一类人不同的是，他是一个极其风骚的人，话多，且经常会援引一些小众的烂梗。印象里最深的一幕是他在听到别的男生之间互开父子玩笑时突然蹦出来一句话拱火：</span></p><p><span>　　“他是魔鬼，而你是魔鬼的父亲——鬼父。”</span></p><p><span>　　惹得周围知道这破梗的人哄堂大笑。</span></p><p><span>　　兰杜康平日里的作风也贱兮兮的。我们的英语教材发放时都会附赠一张并没有人会去用的光碟，而他则会，便用衣服裹着它，弯着腰佯装路边卖片的对着周围好友挤眉弄眼：“小朋友，我这里有一些大人爱看的东西，你要不要？”——最后讨来一阵暴打。</span></p><p><span>　　话虽如此，兰杜康对于什么场合该说什么话一直都能分得很清，他能很敏锐地察觉到对方的心情与态度进而说合适的话。玩笑适度，严肃与脱线收放自如，和他相处的人只觉如沐春风。但是，兰杜康是怎么看林蒙的呢？</span></p><p><span>　　认真回想的话，林蒙对兰杜康抱有这种特殊的好感是可以看出来的。时常能看到林蒙在兰杜康不在的时候看着旁边空荡荡的座位发呆——两人同桌，而兰杜康坐在靠窗位置，那时我以为林蒙是在看着天空发呆——也时常能看到林蒙频繁拿数学题和兰杜康讨论，尽管考试结果上林蒙的成绩总是能比兰杜康高出十几分；两人总是形影不离，下课了林蒙要拉着兰杜康一起去上厕所，放学了也要一起回家；兰杜康要纸巾或湿巾的时候，通常都是伸手从林蒙那里抽几张的，而林蒙本人基本上没用过这些东西。</span></p><p><span>　　林蒙喜欢兰杜康......到底什么是喜欢呢？兰杜康喜欢林蒙吗？</span></p><p><span>　　我不知道。我甚至有点烦躁，为什么林蒙会觉得我会明白这些东西呢？心思烦乱中，我带着半确定的口吻向面前的朋友问道：“嗯......我再确认一下，你真的喜欢兰杜康？”</span></p><p><span>　　“嗯。”林蒙深呼了一口气，直视我的目光，“我很确定，我喜欢他。”</span></p><p><span>　　“伴侣那样的喜欢？”</span></p><p><span>　　“你可能不信吧......但是，这是真的。”似乎是觉得我并不相信，林蒙苦笑了一下，“我很难跟你形容这种感觉。该怎么讲呢.......我很享受和他在一起的每分每秒，总是恨不得下一秒就能看见他。我时常会幻想如果我们两个能在一起，那么将来会一起过怎样的日子，一起去怎样的地方......嗯......”他那张白皙的脸越来越红，“......有的时候看着他，我真的——嗯，你不要跟别人说——我真的有一种冲动，想要与他凑得更近，想要握住他的手，想要和他拥抱，想要和他......接吻。我想要了解他的一切，也想要他了解我的一切。”</span></p><p><span>　　“这就是喜欢吗？”我有些好奇。</span></p><p><span>　　“至少对我来讲是这样的。”林蒙抓了一下自己的头发，“喜欢这种东西，谁说得清呢？”</span></p><p><span>　　“那你喜欢的是他的什么呢？”似乎是出于一种八卦的心态，我下意识地问出了这个问题，尽管现在我的脑海里一团乱麻。但是林蒙的回答却出乎我的预料：</span></p><p><span>　　“——我不知道。”</span></p><p><span>　　“欸？”</span></p><p><span>　　林蒙的嘴角微微翘起，勾勒出微笑的弧度：“我觉得吧，喜欢就是喜欢啊。这种东西很微妙，谁也说不清楚。真要说的话......”他抬头望天，深吸一口气：“可能是喜欢他带给我的一种幸福感吧——就是看到他的时候，我就会觉得非常幸福。”</span></p><p><span>　　幸福感......这依然是一种模糊的说辞，并不能说服我。幸福感在我看来只能一种“补不足”罢了。人活着总是会慢慢消耗掉一些东西的，也许是维持正常生物活动要消耗的物质，也许是更为飘渺的精气神。有所消耗自然有缺，在这种情况下，补充损失、完善所缺的本能使得我们必需要寻找什么东西抵消掉这种损耗，这就好比人饥饿时需要进食，而林蒙所说的这种幸福感便是我们精神上需要寻求的食粮。我无法理解林蒙所说的，但我也不排斥帮助面前这个不知为何把我看作可靠朋友的同学。</span></p><p><span>　　“嗯......话先说在前头，我可没谈过恋爱也没喜欢过人啊，所以我只能从一个没经验的旁观者的角度跟你说我的想法。”我佯装轻松地跟林蒙说道，尽管在吐出“喜欢”这一字眼时心无缘由地漏跳了一拍，“你问我我觉得你们两个有没有可能，对吧？”</span></p><p><span>　　“嗯嗯。”林蒙的脸红得像是冬天里的旭阳。</span></p><p><span>　　“——坦白来讲，我也不知道。”</span></p><p><span>　　“啊......”</span></p><p><span>　　“假如是单纯的凑CP的话，我会很愿意站你们这一对的啦。你们两个人在一起真的很搭。”看着林蒙突然神情慌乱，我下意识地宽慰道，“让我仔细想的话，你对他有感觉是很容易看出来的。之前我就纳闷为什么你经常看窗外的风景，现在回想才发现你原来是在看兰杜康的座位。只是.......”我突然感觉嘴巴有点发干，但还是真诚地对上了林蒙不知所措的目光，“和你一样，我也把你看作可以交心的朋友，所以我必需实话实说。嗯......虽然我能看出来你对他有这样的感情，但我看不出来他是否对你有同样感觉。”</span></p><p><span>　　啊，我又在习惯性地托词了吗？我真的有把林蒙看做是可以交心的朋友、而不是隔着一定光年在另一条轨道上运行的一颗永不相交的行星吗？我在心里自嘲。或许我便是这样懦弱而虚伪的人吧——出于对改变的恐惧而桎梏自己的小人。</span></p><p><span>　　听了我的话后，林蒙目光黯淡了下来，眼神飘离了我的视线：“......你说的对。我也不知道他到底喜不喜欢我......我甚至不知道在他的眼里我是怎么样的。况且......我和他都是男的。虽然同性现在也是合法的，但是一个人对同性有感觉的概率应该是很小的吧......”</span></p><p><span>　　他又抓起了自己的头发：“嗯......叶舟，我不知道该怎么跟你讲。但是我真的.....真的很喜欢他。但是我也很害怕，真的很害怕。我害怕一旦我跟他说出我的心意，我们的关系就会不复从前。我害怕他会拿着异样的目光来看我，也害怕就此以后他便会故意远离我。有的时候我会觉得他对我也是有感觉的，但我更恐惧这是我自己一厢情愿带来的错觉........”</span></p><p><span>　　林蒙突然在我面前滔滔不绝起来。对此我完全能理解。总是会有人像是林蒙这样，平日里看起来话不多的样子，实际上却是把话埋藏在了心里。总是需要一个契机，像是我读过的文学作品那样，一个合适的时间地点人事物共同构成的契机，使得他们能够讲这些话发泄出来。只是不知为何，看着林蒙在我面前不断倾吐着自己对兰杜康的心声，听着他对于他们之间关系的看法与担忧，感受着他的情绪越来越低落，我的心也随之揪紧。鬼使神差地，我打断了他的话。</span></p><p><span>　　“.......还有，叶舟，非常感谢你能在这里听我说话——”</span></p><p><span>　　“——为什么不试一试呢？”</span></p><p><span>　　“诶？”林蒙似乎没想到我会打断他的话，显得有些讶然。</span></p><p><span>　　“你完全可以试一试啊——跟他表白。”我对着他笑了笑，似乎是在给他鼓劲，“虽然我们两个都看不出来他是否喜欢你，但我们也都看得出来他不讨厌你啊。”</span></p><p><span>　　“可是.......”</span></p><p><span>　　不像以往保持倾听的态度，我继续说了下去：“首先，现在你所说的一切都是站在你的主观立场上的，一切都是你的个人假设。为什么要拿你认为的&#39;他不会喜欢你&#39;的可能性去否认掉‘其实他也喜欢你的’可能性呢？当然啦，这道理你也应该是知道的，道理大家都懂，只是愿不愿意去做是另外一回事。”</span></p><p><span>　　林蒙显得有些窘迫。</span></p><p><span>　　我打量了一下他，叹了口气：“说实在的，其实只是你不自信罢了。因为不自信......所以会去否认对于自己有利的那种可能。但是，你条件算差吗？” 我换了轻松的语气说道，带着些许调侃的味道：“据我所知，年级里可是有不少女生喜欢你的。”</span></p><p><span>　　尽管林蒙内向，但他白净斯文的外表和礼貌的言行以及那温和的性子使得他的异性缘不错。通常而言我们学校的学生在整个高中生涯中要经过三次分班——录取后会分一次班先行上半个月的课，作为初升高的课程衔接；高一开学时会分一次班上一年的基础课；到了高二则是进行最后一次文理分科的分班——这样的分班制度使得我们年级中的大多数人能互相认识，一些流言蜚语自然也就容易传播开来。而林蒙便是我听过的众多八卦中的一个主角。</span></p><p><span>　　只是没人会想到林蒙会喜欢兰杜康吧.......我在心里吐槽了一句。</span></p><p><span>　　“可我感觉那不是一回事啊......”</span></p><p><span>　　“怎么就不是一回事了呢。你自己也不是说了么，喜欢就是喜欢啊。尽管有人常说喜欢啊爱情什么的都是由人的性取向与性偏好造成，但我更加认同性欲什么的是因为‘喜欢’而存在的。”我的声音出乎意料地冷静，我敢说我很少像现在这样自然而然地对着他人说出这么一长段话，“人是人性与兽性的结合，但人之所以为人，是因为人性而非作为生物本能的兽性。我想啊，虽然性取向是客观存在的，但人的精神世界中一直存在着这种能够‘喜欢’另外一个人的人性，或许人天然的生理结构促使人是异性恋的，但这种人性能够使一个人跨越一切去喜欢另外一个人——这是合理的，也是难能可贵的。它发生在同性间固然少见，但少见不代表异常，更不代表它不该存在——况且，现在同性婚姻也是合法的呢。”</span></p><p><span>　　我看着林蒙：“其实，你潜意识里还是在顾忌你和他的性别的吧。”</span></p><p><span>　　“......嗯。”</span></p><p><span>　　“没必要啦——你不妨按我的思路来看待这件事吧。嗯......我一直很反感小说电视剧表白失败的桥段里，失败方总是会找种种理由来安慰自己——什么自己没钱啦，什么自己没什么社会地位啦，什么自己付出的不够多啦。放在同性之间的表白上，这些理由往往会归结为‘因为他不喜欢同性’上。但在我看来，这些全部都是次因。许多人寻找这些次因来安慰自己，而不愿意直接面对真正的主因——说白了，所有的表白失败，无非就是在对方心里没有你的位置，对方并不如你喜欢他（她）那般‘喜欢’你。在他（她）的眼里，你或许只是个可有可无的路人，或许只是普通的同学、朋友或同事，或许只是亲人般的存在，但无论如何，还是那句话，他（她）并不把你俩的关系放在‘喜欢’的同等天平上，如此而已。”我的语调越来越快，但心却逐渐平静下来，“而很多人却不敢正视这样的事实，拼命弥补那些次因的不足，希冀对方能够因此接受自己，但这只会让剧情根理纠缠，越理越乱，越来越狗血罢了。喜欢就是喜欢。你现在的种种顾虑都不会影响到兰杜康是否喜欢你的事实。如果他不喜欢你，那么你早早说了也能早早理清彼此的关系；如果他喜欢你，那皆大欢喜——当然，我个人......不负责任地以我的直觉来说，我觉得你俩挺有可能的。”</span></p><p><span>　　“总之，试一试吧，跟他表达你的心意。不然只是无意义的内耗。”我看着林蒙，如此总结道。</span></p><p><span>　　回过神来开始自省，我惊讶于自己竟然一口气说了那么多东西。尽管内容多半是我平日遐想的杂念，但都是心里话。事实上我很少跟旁人讲自己的心里话，即使那个人是白遇桃。今日或许是有点累吧，竟然一时激动下吐露了那么多。</span></p><p><span>　　不过效果稍尽人意。</span></p><p><span>　　听了我的话后，林蒙的眼睛亮起了光。他的手向我伸出又在下一秒收回，似乎原本他想握住我的手表示感谢，但又顾虑到我们之间的性别与关系撤回了。紧接着，出乎意料地，他对我鞠了个躬。</span></p><p><span>　　“谢谢你，叶舟。”他摸着头，不好意思地对着我笑道，“我决定了——今天晚上放学后就跟他说。”</span></p><p><span>  </span></p><p><span>　　人与人之间的关系应该是怎样的呢？</span></p><p><span>　　关系有很多种，但它们都应该遵循基本的规律运动，就像是宇宙中的天体各不相同，但依照引力的法则相对彼此默默运转。想到中午和林蒙的谈话，我想我与林蒙之间的距离应该靠近了些。不过幸运的是，这拉近的一丝距离尚受引力的约束，而不至于陷入相撞与崩塌的境地。</span></p><p><span>　　那你和我呢？我悄悄看着白遇桃的侧脸，在心里问道——如果我试着靠近你，结局又是如何？</span></p><p><span>　　眼下正是周五的黄昏，一如既往，每逢不用晚自修的周五，我都会在放学后和白遇桃一起走回家。白遇桃所属的白氏——本镇的一个宗族——和我所在的叶氏世代交好，因此我们两个在小时就互相认识了。不过因为我和她都不是自来熟的性子，一直都只是泛泛之交，仅仅只是认识罢了，连朋友都算不上。直到去年我们恰巧被分到同一个班且成为了同桌，这才开始相熟，我们几乎每天放学后都会一起走回家。虽然现在文理分班后我们两个分开了，但这个习惯依然保留了下来。</span></p><p><span>　　晚风轻轻吹起，漾起一丝微香。我知道，我想只有我知道，这是独属于白遇桃身上的味道——清淡而温和的香气，在过去和她同桌的一年里我时常能闻到。</span></p><p><span>　　这也是为数不多我能清楚感受到的气味。</span></p><p><span>　　我们两个就这样慢慢地走着，时不时交换一些琐屑的话题交谈。不知不觉间就到了棠溪边上的分岔路口，相互告别后，我们在此分开了——我的家在东边，而白遇桃家在西边，我们并不完全顺路。按照往常，我也应该就这么离去。只是不知道为什么，我突然想起了不知道表白结局如何的林蒙，我转头，明明自己也不知道想要说什么，但还是开口道：</span></p><p><span>　　“——那个，小白......”</span></p><p><span>　　但白遇桃已经走远了，棠溪的风吹散了我本就不清晰的话语。斜阳已落在西边的山林，残晖之下，她的背影逐渐黯淡。我怔怔地站在原地，目送她越行越远。</span></p><p><span>　　她没有回头。</span></p><p><span>【3】</span></p><p><span>　　倘若回溯记忆，那么与白遇桃的初次相遇应当是在我十二岁那年，在镇子的西边举办的春祭上。</span></p><p><span>　　之所以是“应当”，而不是更加确切的措辞，是因为云琎这个镇子并不大。也许在这里生活上一年，便能在日常生活中遇完镇子上的所有人。只是能让我们真正留下印象的人总是很少，人间烟火里你来我往，最后记住的人也不过就那一些。</span></p><p><span>　　春祭是我们这儿的地方习俗，于每年的春分前后在镇西星应山山上的城隍庙举办，通常为期一周，大多由本地宗族白氏操办。届时会在城隍庙的山脚开办庙会，在城隍庙的观音殿里举办法会。由于此时正是山上桃花的花期，因而还会有结伴踏青的风俗。</span></p><p><span>　　而我与白遇桃的初见，便是在春祭期间的踏青上。</span></p><p><span>　　那个时候我的母亲还未离开人世，我的父亲也没有远走他乡，我家和族里的关系也还没有彻底破裂。医生说多户外散步有助于缓解我母亲的病情，因而我的父亲便带着刚小学毕业的我和母亲来星应山上踏青。那一年的春天特别暖和，满山和煦的阳光下，桃花开得盛烈，母亲平日因病痛而皱紧的眉头也在迎面的暖风中微微舒展开来，带得我的父亲也难得多出了几分笑容。</span></p><p><span>　　那时的我很高兴，即使我并不能闻到我父母与旁人所赞誉的“十里桃花香”。我的父亲扶着我的母亲，我牵着我母亲的一只手，我们一家三口就这么在山上走着。每隔一段路，路旁的桃树枝上便挂着僧人用墨写的像是诗文一样的东西，用红绳系在那里，微微随风飘扬。至今我都记得其中的两联：</span></p><p><span>　　“门庭吉庆喜非常 积善人家大吉昌”</span></p><p><span>　　“婚姻田产诸事遂 病逢妙药即安康”</span></p><p><span>　　——就在看到那两联没多久后，我们便碰到了白遇桃。</span></p><p><span>　　那时的白遇桃站在岔口的一棵桃树下，穿着一身海青，几瓣桃花落在她的肩头上。她正帮着旁边同样穿着海青的长辈拿着一叠我们一路上看到的诗文，而她的长辈则择了一幅，踩着张矮凳，将它系到桃树枝上。我只觉他们有些眼熟，但并不知道他们是谁。还是我的母亲先上前打了招呼：</span></p><p><span>　　“伯德叔好。”</span></p><p><span>　　这也是我们地方特色的称呼方式。面对氏族与邻近氏族的男性长辈，通常以该长辈的名加“叔”称呼，若该长辈的名是单字，那么则前前边补一个取自“伯仲叔季”的“伯”以示尊敬；对女性长辈的称呼则因为传统原因有点不公，若长辈名为单字，那么则取“季”字为补，与长辈名加“姨”进行称呼。</span></p><p><span>　　德叔听到我母亲的招呼后，便从矮凳上来与我们寒暄。德叔是一个大概六十多岁高龄的老人——后来我才知道，他同样是白遇桃的爷爷——只是在氏族里的辈分稍小，只比我母亲大一代，因而我的母亲只需称他为“叔”即可。我的父母便与德叔寒暄了起来，具体的内容我已经忘了，我只记得大概是德叔夸我母亲现在精神气十足，之后应该会好起来云云。当时我的注意力都在了白遇桃身上，我好奇地看着她，她也默默地看着我。两个人站在各自的长辈身后，无声地打量着对方。</span></p><p><span>　　那时的白遇桃还没长开，脸上稚气未消，不过她的神色已经像是如今这般，时常保持着一种闲淡的恬静，让人想起镇子北边的山尖上总是飘着的那抹白云；她那头乌黑的长发此时方微微过肩，用一根茶花红色的头绳束着，煞是可爱；记忆中永远不变的是她右眼的眼睑的外下方滴着的那颗泪痣，那是在三年后的无数个黄昏中，我偷偷侧头时总能看到的、独属于她的印记。</span></p><p><span>　　记忆里对时间的感知似乎总是那么模糊，我不清楚我和白遇桃在当时打量了对方多久，只记得岔口的桃花树花开花落，似乎岁月已经变换了一个甲子，而她的肩头，那身藏青色的海青服上，总是飘落着几瓣桃花。</span></p><p><span>　　这一段记忆终结于我母亲把我推上前来，向德叔问好，和白遇桃互相认识。记忆里的我有些紧张地跟白遇桃介绍自己：</span></p><p><span>　　“你......你好，我叫叶舟。”</span></p><p><span>　　白遇桃微笑着向我伸出了手：“你好，我叫白遇桃。相遇的遇，桃花的桃。很高兴认识你。”</span></p><p><span>　　那时微风漾起，三月的暖风懒洋洋地拂过我的发梢。而就在与白遇桃握手的时候，我难得地闻到了一丝香气——清淡而温和的香气，温温柔柔的，尽管是那么轻微的一缕，味道也是那么的微淡，但在我的记忆中却如此地清晰，以至于三年过去，记忆里对于它的感触还像是发生在当下那般。恍惚间我还置身在那个母亲未离世、父亲未常年在外经商的春日午后，我们一家人在十里桃花中慢悠悠地散步，而白遇桃站在岔口的桃树下，肩上落着几瓣桃花，微笑着向我伸出手：“你好，我叫白遇桃。”</span></p><p><span>　　春风恰如其时地送来那一抹我无法忘怀的清香。</span></p><p><span>　　彼时的我并不知道那是独属于白遇桃的味道。在那之后，我只在街上或是初中学校里远远地见过白遇桃多次，两人远远地含笑招呼，便如在各自轨道上运转的行星一般，远远地擦肩而过了。直到高中与白遇桃成了同桌，我才发现了那抹记忆中的香气来自于我三年前偶遇的她。也无怪乎我在后来的春天里，一个人前往岔口的那棵桃树时，除了一地落花，什么也没闻到，什么也没看到。</span></p><p><span>  </span></p><p><span>　　回到家的时候，太阳已经彻底落下了。天空渐黯，东边的天里星星已在闪烁，一轮圆月挂在孤深的夜空之中；独剩西边的天际，还剩着抹从淡绯过渡到龙葵紫的残晖。</span></p><p><span>　　我打开门，一如既往，轻轻地说了一声：“我回来了。”</span></p><p><span>　　家里黑黢黢的，没有一点儿灯火。</span></p><p><span>【Hectopascal - Chap 1 渐黯 Dusking - End】</span></p><h2><a name="chap2-下沉-sinking" class="md-header-anchor"></a><span>Chap2 下沉 Sinking</span></h2><p><span>【1】</span></p><p><span>　　高中的生活总是悲催的。即使是周六，我们依然要回校自修，并且根据情况会安排名为“周周清”的周测考试。不过好在学校还算存留些许人性，将周六这一天的早自修的时间推迟到了原本的第一节课进行。得益于此，我出门的时候太阳已经微微升起，而不像平时那般——“鸡声茅店月，人迹板桥霜”。</span></p><p><span>　　整个云琎镇坐落在群山环绕的谷地之中，古时候的云琎基本上都围绕着棠溪周围的平坦处夯土筑房，大部分房子都窝在沿溪的平阔带。直到近代，才有人力物力开始向着山势平缓的东北方开发。云琎中学的前身云琎学堂因而从拥挤的老城区搬迁到了一处小山包上。</span></p><p><span>　　从我家到学校，大概需要走上十几分钟。先是走过老城里用条石搭铺的老街，而后是顺着平缓向上的、已经坑坑洼洼的水泥路经过一堆八九十年代建造的楼房，再踩过政府这几年铺的纹砖人行道，便能抵达学校的大门。</span></p><p><span>　　学校附近有一家饱受好评的的煎饼铺，在有纹砖人行道的那块片区，名为“鏊谷坊”。这一家卖的煎饼果子深受云琎学子的喜爱，虽然我无法感知到我的同学兰康口中“能让人联想到阳光、小麦与牛奶的面饼香气”，但生菜混着鸡蛋的鲜香与面饼夹着薄脆在嘴里炸开所带来的美味口感深得我爱。如果不是赶时间的话，就像今天这样早自修推迟的周六，我通常都会在这里买上一份当早点。今日自然不例外。</span></p><p><span>　　提着装着煎饼的袋子从后门走进教室，令人意外的是我前桌的林蒙与兰康早早地就到了，两个人正在啃着包子，时不时互相聊上那么一句。</span></p><p><span>　　看来，成了？</span></p><p><span>　　我挑了挑眉，看着这一对新人你侬我侬的模样，按捺下了去打招呼的习惯性冲动，悄摸摸地走到自己的座位上坐下。谁知我刚一坐下，前边的林蒙就转过头来，激动地低声向我道谢：</span></p><p><span>　　“谢谢你，叶舟。”  </span></p><p><span>　　“咳咳，那个......谢了，&#39;叶哥&#39;。”兰康也转过来向我道谢，他的脸上难得露出了几分害羞的神情。他挠着头：“之后改天请你喝奶茶。”</span></p><p><span>　　“哥”是兰康的口癖，在闲谈时他总是会以“某哥”“某哥”这样的方式称呼对方。只不过在我这，“叶哥叶哥”这样的称呼往往发生在兰康恳求我晚一点把收齐的历史作业送到办公室的时候——我是班上的历史课代表——平日里很少见到兰康这么郑重地以这个称呼叫我。一时间我忍不住想调笑他们。我佯装不知他们谢的是什么：“欸？你们在说什么？”</span></p><p><span>　　出乎我意料的是，平常有些无厘头的兰康竟然脸红了起来，倒是腼腆的林蒙认真地看着我说道：“就是昨天中午我找你说的事......嗯......很感谢你当时说的话。如果不是你，我们可能谁也不会迈出这一步——哪怕真要迈出，也可能是要在很久以后了。”</span></p><p><span>　　看着他真诚的眼神，我忽地有些惭愧：“其实没什么大不了的，谁让我们是好......好朋友呢。”</span></p><p><span>　　“嗯。”林蒙笑了起来，“其实我昨天就用微信给你发消息了，但你好像一直都不在线。最后想想还是觉得当面来找你道谢比较好——总之，真的真的真的非常谢谢你。”</span></p><p><span>　　因为家里只有我一个人，故而晚饭也要我自己准备。寻常我习惯在食堂解决，只是周五要与白遇桃一起走回家，所以就成了例外。而昨晚草草处理掉晚饭后，不知为何非常疲惫，我没有看放在床头的手机便早早睡了。我刚想说点什么解释一下，就在这时坐班的老师走了进来，林蒙与兰康向我投了个感激的眼神后便转回去偷偷啃包子了。</span></p><p><span>　　我看着手里的煎饼有点烦恼——按照规矩，教室里是不允许吃东西的。</span></p><p>&nbsp;</p><p><span>　　最后我还是出了教室，在瑟瑟春寒之中站着解决完了自己的早餐。</span></p><p><span>　　云琎中学总是有许多规矩，不许在教室里吃东西便是其中一条。尽管没有老师在教室的时候我们都会把它当作耳边风，但如果有，尤其是那些重视规矩与形式的老师，出于对她们的尊重，我们还是会默默地走到走廊上去解决。</span></p><p><span>　　好巧不巧，进来坐班的政治老师便是一位。她的名言便是在教授必修四辩证法一块内容时的举例：“没有形式哪来的内容？形式与内容就是一对辩证关系——”</span></p><p><span>　　这一周难得没有安排周周清，全都是自修。一个上午很快就在无休止的语数英政史地的试题中度过。唯一的插曲是英语老师在倒数第三节自修时走进来上课，但是教室里的电脑莫名其妙坏了：电脑开机后，桌面的所有图标与任务栏消失了。</span></p><p><span>　　重启了两三次情况照旧后，她选择把我们班的电教委员兰康叫上来：“兰康，过来看一下。”</span></p><p><span>　　兰康硬着头皮上去了。</span></p><p><span>　　众所周知，大部分电教委员都只是负责教室里的电脑、电灯与风扇的开关，但不知为何许多老师总是以为电教委员便是电脑维修工，电脑出了问题把他们叫上来就行，兰康便是其典例。我眼睁睁地看着兰康皱着他那粗犷的眉毛，右键刷新电脑桌面多遍未果后，向英语老师提议道：“老师，我不太会。要不去把隔壁班的李清仪叫来？”</span></p><p><span>　　老师也有点无奈：“去吧。”</span></p><p><span>　　李清仪是隔壁班的女生，在本校颇有名气，兰康与林蒙在选科分班前与她同班，这两人对她甚是推崇。据兰康所说，李清仪自小跟着学校里的一个老校工在校内做工，因此会修水管、搞焊接、换风扇等多种技能，目前她也在校工部那儿兼职，偶尔会是她帮其他校工过来处理学生老师上报的一些后勤问题；而林蒙则是说她性格很好，人美心善读书棒，在之前的班上对她帮助很多，建议我日后可以与她好好结识一番。</span></p><p><span>　　值得一提的是，林蒙曾悄悄告诉我兰康在高一和她打赌打输了，现在李清仪是他的“爹”。</span></p><p><span>　　不一会儿，兰康就带着李清仪进来了。不过进门的时候，她微微把目光往我和林蒙的方向投了过来，那对秀丽的眉毛稍稍一挑，而后就若有所思地瞥看了旁边笑得谄媚的兰康一眼。按照我对这三人的关系的印象，大抵是她已经知道了自己儿子脱单的消息。</span></p><p><span>　　嗯......这算什么？爸爸看儿媳？我饶有兴致地想。</span></p><p><span>　　只见李清仪和英语老师微笑问好后，便利落地走到讲台上操作起了电脑。她的动作很快，清隽的眼眸略微凝神，似乎便明了了问题的症结所在，随后拉出键盘轻轻敲击几下，便调出了一个黑底白字的窗口，紧接着是键入一行像是命令一样的东西，最终便弹出了资源管理器的界面。向一旁的英语老师询问几句后，便找到了之前存放在电脑上的课件，帮老师打开后便在班上一堆人崇拜的目光中飒然离去。</span></p><p><span>　　只是离开前，她又回头看了已经回到座位上的林蒙与兰康一眼。</span></p><p><span>　　“好了，girls and boys，现在我们开始上课。”英语老师拍拍手，示意所有人抬起头来看她，一边称赞李清仪一边开始上课：“感谢兰康同学和十二班李清仪同学的帮助。现在请把上回月考的试卷拿出来，对于大家上次的错题，我总结了一些......”</span></p><p><span>　　.......</span></p><p><span>　　英语老师煞是无情，硬是连上了两节自修课，并且占掉了中间十分钟的课间休息，累得我同桌的女生一下课便趴在了桌上。我也有点疲惫，放下了手中记单词的笔，揉戳自己的眉心。而我的前桌林蒙与兰康则结伴上厕所去了，不得不说这两人平日里关系就过于亲密，哪怕现在真的在一起了也没人看出猫腻——或许隔壁班的李清仪是一个，不过我不清楚是否是兰康他们主动告诉的。</span></p><p><span>　　只是这两人确实腻歪啊......我有点头疼。</span></p><p><span>　　刚刚结束的这两节课上，我已经不止一次用眼角的余光瞥到两人的手悄悄地在桌底握在一起，或是两人不断窃窃私语。如果不是我的同桌是一个粗神经的女孩，精力全放在了荧幕与黑板上，而后面的人的视线看不到这两个在桌底下的亲密动作，想来只要这上午过去了，这俩人绝对会在班里暴露关系。</span></p><p><span>　　这就是恋爱中的人么？哪怕是两个男孩？</span></p><p><span>　　我的思维有点儿发散，手不自觉地摸了摸桌角的摘抄本。</span></p><p><span>　　摘抄是我们的班主任——同样是我们的语文老师——卢桦鼓励我们做的东西，她建议我们将一些易错词的拼音或是自己遇到的喜欢的词句等摘录到本子上。按照她的说法，“只要是你愿意投入精力与时间去做的东西，多多少少都会有些许收获”，而现实也确乎如此。我热衷于花费不少自修的时间去做摘抄，不过和其他人不一样的是，我习惯于在那些摘录下来的他人的字词句中穿插进自己随手写的东西——其中大部分都是一些个人的琐屑情绪与零碎记忆。</span></p><p><span>　　而这本摘抄本里，就记录着不少我与白遇桃之间的回忆。</span></p><p><span>　　我有些无聊地打开摘抄本的最新一页，看着在记录时顺手会写下的当日日期，忽地发现今日已是三月十一，春分已近。</span></p><p><span>　　春分已近，意味着云琎的春祭就要开始了。</span></p><p><span>　　我莫名有点感到茫然，心却悄悄地一点点鼓噪起来。回忆着去年有关春祭的记忆，眼帘倏然映入了我在三月十日抄录的一句词：</span></p><p><span>　　“三愿如同梁上燕，岁岁长相见。”</span></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div>
+</body>
+</html>
