@@ -32,3 +32,9 @@ I always do some useless work  just out of interest,for which you can view throu
 - Writing && Reading
 - Learning more languages(English,Japanese)
 
+***
+
+If you want to sponsor me,you can sponsor me on [Afdian.net](https://afdian.net/a/leewendao).
+
+![](./afdian.jpg)
+
