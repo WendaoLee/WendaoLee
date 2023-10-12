@@ -30,10 +30,6 @@ I always do some useless work  just out of interest,for which you can view throu
 - Writing && Reading
 - Learning more languages(English,Japanese)
 
-<<<<<<< Updated upstream
 ***
 
 
-
-=======
->>>>>>> Stashed changes
