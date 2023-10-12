@@ -19,10 +19,8 @@ I always do some useless work  just out of interest,for which you can view throu
 
 #### · Recently I Learning For
 
-- Linear Algebra (Sadly I forgot it since I last learned it. So now I'm reviewing of it)
-- Haskell (I want to keep holding with it)
+- Haskell (it is a deep ocean)
 - English-Chinese Translation
-- Category Theory
 - Mathematical Analysis
 
 #### ・Future Orientation
@@ -32,7 +30,10 @@ I always do some useless work  just out of interest,for which you can view throu
 - Writing && Reading
 - Learning more languages(English,Japanese)
 
+<<<<<<< Updated upstream
 ***
 
 
 
+=======
+>>>>>>> Stashed changes
