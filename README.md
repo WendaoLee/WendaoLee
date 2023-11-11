@@ -1,7 +1,10 @@
 ## :ghost: Here,you will see a soul.​
 
+> 🎵  Mode: Soyorin ！
 
-Hi,here is Wendao Lee,a nobody. I'm majoring in  **Geographic Information Science** 🎉,but also costs much on **Computer Science**. 
+Hi,here is Wendao Lee,a nobody. 
+
+I'm majoring in  **Geographic Information Science** 🎉,but also costs much on **Computer Science**. 
 
 I always do some useless work  just out of interest,for which you can view through my repositories. Do hope the things I have done could help someone in the future days —— Err......absurd wishes.
 
@@ -19,9 +22,9 @@ I always do some useless work  just out of interest,for which you can view throu
 
 #### · Recently I Learning For
 
-- Haskell (it is a deep ocean)
-- English-Chinese Translation
+- Haskell (it is  deep ocean)
 - Mathematical Analysis
+- React.js
 
 #### ・Future Orientation
 
