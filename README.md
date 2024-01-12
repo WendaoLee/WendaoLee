@@ -1,6 +1,6 @@
 ## :ghost: Here,you will see a soul.​
 
-> 🎵  Mode: Soyorin ！
+> 🎵  Mode: 蜜瓜包仙人
 
 Hi,here is Wendao Lee,a nobody. 
 
