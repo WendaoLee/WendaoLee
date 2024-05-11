@@ -24,13 +24,14 @@ My most developed programming language:
 
 #### · Recently I Learning For
 
-- Haskell (it is  deep ocean)
-- Mathematical Analysis
-- React.js
+- LLM
+- Domain-Driven Design
+- Keyboard
 
 #### ・Future Orientation
 
 - Mathmatics
+- Haskell (it is  deep ocean)
 - Computer Science
 - Writing && Reading
 - Learning more languages(English,Japanese)
