@@ -1,12 +1,18 @@
 ## :ghost: Here,you will see a soul.​
 
-> 🎵  Mode: 丰川祥子(白祥版)
+> 🎵  Mode: 剑走翩风
 
-Hi,here is Wendao Lee,a nobody. 
+![](./my-favourite-pic.jpg)
+
+<p style='text-align:center'><b>My State of Mind <b/>(source from Pixiv@Koyomania)</p>
+
+***
+
+Hi,here is WendaoLee (or Erika Lee),a nobody. 
 
 ![glance](https://github-readme-stats-wendaolee.vercel.app/api?username=WendaoLee&theme=tokyonight&show_icons=true)
 
-My blogs(most of that is Chinese): [leewendao.otterstack.cn](https://leewendao.otterstack.cn)
+My blogs (most of that is Chinese): [leewendao.otterstack.cn](https://leewendao.otterstack.cn)
 
 My most developed programming language:
 
@@ -26,15 +32,11 @@ Currently I'm maintaining these open-source projects:
 
 #### · Recently I Learning For
 
-- LLM
-- Domain-Driven Design
+- Signal And System
 - Keyboard
 
 #### ・Future Orientation
 
-- Mathmatics
-- Haskell (it is  deep ocean)
-- Computer Science
 - Writing && Reading
 - Learning more languages(English,Japanese)
 
