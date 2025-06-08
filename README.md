@@ -4,7 +4,7 @@
 
 ![](./my-favourite-pic.jpg)
 
-<p style='text-align:center'><b>My State of Mind <b/>(source from Pixiv@Koyomania)</p>
+<p align="center"><b>My State of Mind</b> (source from Pixiv@Koyomania)</p>
 
 ***
 
